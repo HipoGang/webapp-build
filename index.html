@@ -12,7 +12,11 @@
 
     <body class="bg-black text-white" style="background-color: #0e0e0e; margin: 0">
         <div id="root" class="min-w-screen min-h-screen">
-            <img src="welcome.jpg?" style="width: 100vw; height: 100vh; object-fit: contain; object-position: top" />
+            <img
+                src="welcome.jpg?"
+                style="width: 100vw; height: 100vh; object-fit: contain; object-position: top"
+                onload="Telegram.WebApp.expand(); Telegram.WebApp.ready()"
+            />
             <div id="classesToBeIncludedInOutput" class="hidden max-h-16"></div>
         </div>
 
